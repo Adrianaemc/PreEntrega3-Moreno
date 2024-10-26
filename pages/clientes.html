@@ -3,106 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mascotas</title>
+    <title>Clientes-Mascotas</title>
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/img/android-chrome-192x192.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body>
-    <header>
-        <header>
-            <div class="header">
-                <div>
-                    <img src="../assets/img/logo-header.png" alt="logo">
-                </div>
-                <div class="nav">
-                    <nav>
-                        <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="especialistas.html">Especialistas</a></li>
-                        <li><a href="#">Clientes</a></li>
-                        <li><a href="tienda.html">Tienda</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <header class="container-fluid bg-header py-3">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="../assets/img/logo-header.png" alt="logo" class="img-fluid" style="max-width: 85px;">
             </div>
-        </header>
+            <div class="col-md-8">
+                <nav class="text-center">
+                    <ul class="nav justify-content-center fw-bold">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="../pages/servicios.html" class="nav-link">Servicios</a></li>
+                        <li class="nav-item"><a href="../pages/especialistas.html" class="nav-link">Especialistas</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
+                        <li class="nav-item"><a href="../pages/tienda.html" class="nav-link">Tienda</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>      
+        <div class="container-fluid p-0"> 
+            <img src="../assets/img/mascotas_index.jpg" alt="mascotas" class="img-fluid w-100 img-mascotas">
+        </div>
     </header>
-    <main>
-        <div>
-            <img src="../assets/img/mascotas_index.jpg" alt="">
-            
-        </div>
 
+    <main class="main-clientes">        
         <div class="titulo_opiniones">
-            <h1>Opiniones de
-            nuestros
-            clientes
-            </h1>
+            <h1>Opiniones de <br>nuestros clientes</h1>
         </div>
-        <section class="clientes-container1">
-            
-            
-            <div>
-                <figure>                    
-                    <img src="../assets/img/Ellipse1.png" alt="perro">
-                    <figcaption>perro</figcaption>
-                <figure>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, quae ullam repudiandae officia aliquam impedit sed tempora aspernatur asperiores facilis, iste sequi quaerat fuga incidunt. Magnam necessitatibus dignissimos numquam enim!</p>
+        <section>
+            <div class="opiniones-container row justify-content-center align-items-center">
+                <div class="col-12 col-md-6 col-lg-4 cliente">
+                    <figure>
+                        <img src="../assets/img/cliente1.jpg" alt="Mascota 1" class="img-fluid rounded-circle">
+                        <figcaption>RULI</figcaption>
+                        <p>Aquí mi mamá compra la comida balanceada al mejor precio del mercado</p>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 cliente">
+                    <figure>
+                        <img src="../assets/img/Ellipse2.png" alt="Mascota 2" class="img-fluid rounded-circle">
+                        <figcaption>LUJAN</figcaption>
+                        <p>¡Muy buena atención, me salvaron la vida!</p>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 cliente">
+                    <figure>
+                        <img src="../assets/img/Ellipse1.png" alt="Mascota 3" class="img-fluid rounded-circle">
+                        <figcaption>MOSCU</figcaption>
+                        <p>¡Los mejores veterinarios de la zona, me salvaron la vida!</p>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 cliente">
+                    <figure>
+                        <img src="../assets/img/Ellipse3.png" alt="Mascota 4" class="img-fluid rounded-circle">
+                        <figcaption>TITI</figcaption>
+                        <p>Excelente atención veterinaria, y cuenta con farmacia</p>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 cliente">
+                    <figure>
+                        <img src="../assets/img/clientes8.jpg" alt="Mascota 5" class="img-fluid rounded-circle">
+                        <figcaption>MILANSESA</figcaption>
+                        <p>La mejor pet shop de la zona, totalmente equipada</p>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 cliente d-none d-lg-block">
+                    <figure>
+                        <img src="../assets/img/clientes3.jpg" alt="Mascota 6" class="img-fluid rounded-circle">
+                        <figcaption>INDIO</figcaption>
+                        <p>Me pusieron todas mis vacunas aqui, muy recomendado</p>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 cliente d-none d-lg-block">
+                    <figure>
+                        <img src="../assets/img/clientes4.jpg" alt="Mascota 7" class="img-fluid rounded-circle">
+                        <figcaption>THOR</figcaption>
+                        <p>la mejor atencion, los mejores profesionales y la mejor petshop</p>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 cliente d-none d-lg-block">
+                    <figure>
+                        <img src="../assets/img/clientes5.jpg" alt="Mascota 8" class="img-fluid rounded-circle">
+                        <figcaption>TEDDY</figcaption>
+                        <p>La mejor pet shop de la zona y atencion veterinaria, lo recomendamos 100%</p>
+                    </figure>
+                </div>
             </div>
-
-            <div>
-                <figure>                    
-                    <img src="../assets/img/Ellipse2.png" alt="perro">
-                    <figcaption>xxx</figcaption>
-                <figure>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, quae ullam repudiandae officia aliquam impedit sed tempora aspernatur asperiores facilis, iste sequi quaerat fuga incidunt. Magnam necessitatibus dignissimos numquam enim!</p>
-            </div>
-
-            <div>
-                <figure>                    
-                    <img src="../assets/img/Ellipse3.png" alt="perro">
-                    <figcaption>xxx</figcaption>
-                <figure>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, quae ullam repudiandae officia aliquam impedit sed tempora aspernatur asperiores facilis, iste sequi quaerat fuga incidunt. Magnam necessitatibus dignissimos numquam enim!</p>
-            </div>
-
-            <div>
-                <figure>                    
-                    <img src="../assets/img/Ellipse1.png" alt="perro">
-                    <figcaption>perro</figcaption>
-                <figure>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, quae ullam repudiandae officia aliquam impedit sed tempora aspernatur asperiores facilis, iste sequi quaerat fuga incidunt. Magnam necessitatibus dignissimos numquam enim!</p>
-            </div>
-        
-
         </section>
-
     </main>
 
-    <footer >
-        <div class="contenido-footer">
-            <div>
-                <img src="../assets/img/logo-footer.png" alt="logo">
+    <footer class="container-fluid bg-light py-4">
+        <div class="container">
+            <div class="row text-primary-emphasis">
+                <div class="col-md-4">
+                    <img src="../assets/img/logo-footer.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <h1>Nuestra ubicación</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7811.078736597059!2d-58.42462608359861!3d-34.60026576381144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6657c2d61b%3A0x17c371d00aa9cced!2sWellVet!5e0!3m2!1ses!2sar!4v1726354109289!5m2!1ses!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <h2>Contáctanos</h2>
+                    <a href="https://web.whatsapp.com/">
+                        <img src="../assets/img/logo-wa.png" alt="whatsapp" class="img-fluid" style="max-width: 65px;">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="../assets/img/logo-ig.jpg" alt="instagram" class="img-fluid" style="max-width: 65px;">
+                    </a>
+                </div>
             </div>
-            <div class="ubicacion_contacto">
-                <h1> Nuestra ubicación</h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7811.078736597059!2d-58.42462608359861!3d-34.60026576381144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6657c2d61b%3A0x17c371d00aa9cced!2sWellVet!5e0!3m2!1ses!2sar!4v1726354109289!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Mascotas. Todos los derechos reservados.</p>
             </div>
-            <div>
-                <h2>Contátanos</h2>
-                <a href="https://web.whatsapp.com/">
-                    <img src="../assets/img/logo-wa.png" alt="whatsapp">
-                </a>
-                <a href="https://www.instagram.com/">
-                    <img src="../assets/img/logo-ig.jpg" alt="instagram">
-                </a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2024 Mascotas. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

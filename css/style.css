@@ -1,98 +1,88 @@
+@charset "UTF-8";
+.main-clientes .titulo_opiniones h1, .opiniones-container .cliente figcaption {
+  text-align: center;
+  font-weight: bold; }
+
+.text-center {
+  text-align: center; }
+
+.bold {
+  font-weight: bold; }
+
+.container-productos .card-container {
+  border: 1px solid #efeff0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s; }
+  .container-productos .card-container h4 {
+    font-weight: bold; }
+  .container-productos .card-container:hover {
+    transform: scale(1.05); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
 .header {
-    background-color: rgb(241, 241, 241);
-    color: #00579E;
+  background-color: #efeff0;
+  color: #00579E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
+
+.bg-header {
+  background-color: #efeff0; }
+
+.img-mascotas {
+  max-height: 300px;
+  height: auto;
+  width: 100%;
+  object-fit: cover; }
+
+footer {
+  background-color: rgba(233, 233, 233, 0.275);
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  footer .contenido-footer {
     display: flex;
-    
-}
-
-.nav ul{
-    list-style-type: none;
-    display: flex;
-}
-
-/* index */
-.quienes-somos img { /* index */
-    width: 100%; 
-    max-width: none; 
-    margin-left: 20%; 
-}
-
-
-.img-mascotas { /* index */
-    max-height: 400px; 
-    object-fit: cover; 
-    height: 240px;
-}
-.bg-header { /* index */
-    background-color: #efeff0;
-    
-}
-
-/*pagina Servicios */
-.pagina-servicios * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.pagina-servicios body {
-    font-family: Arial, sans-serif;
-}
-
-/* Header */
-#servicios-page header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-#servicios-page .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-#servicios-page .header img {
-    max-width: 150px;
-    height: auto;
-}
-
-#servicios-page nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-}
-
-#servicios-page nav ul li {
-    margin-right: 20px;
-}
-
-#servicios-page nav ul li a {
+    align-items: center;
     color: #00579E;
-    text-decoration: none;
     font-weight: bold;
-    padding: 10px;
-}
+    gap: 20px; }
 
-#servicios-page nav ul li a:hover {
-    text-decoration: underline;
-}
-
-#servicios-page main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-
-#servicios-page .nuestros_servicios2 {
+.main-servicios {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  /* Sección "Nuestros Servicios" */
+  /* Imágenes de servicios */
+  /* Titulos de secciones */
+  /* Contenedores de secciones */
+  /* Estilos responsivos para pantallas grandes */ }
+  .main-servicios .nuestros_servicios2 {
     background-image: url("../assets/img/servicios.png");
     background-size: cover;
     background-position: center;
@@ -102,275 +92,218 @@
     padding: 30px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-#servicios-page .imagenes_sn {
+    align-items: center; }
+  .main-servicios .imagenes_sn {
     display: flex;
     justify-content: space-around;
     gap: 30px;
-    margin-top: 40px;
-}
-
-#servicios-page .imagenes_sn figure {
-    text-align: center;
-}
-
-#servicios-page .imagenes_sn img {
-    width: 100px;
-    height: auto;
-}
-
-#servicios-page .consulta-titulo,
-#servicios-page .farmacia-titulo,
-#servicios-page .tienda-titulo {
+    margin-top: 40px; }
+    .main-servicios .imagenes_sn img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px; }
+    .main-servicios .imagenes_sn figcaption {
+      margin-top: 10px; }
+  .main-servicios .consulta-titulo, .main-servicios .farmacia-titulo, .main-servicios .tienda-titulo {
     text-align: center;
     color: #00579E;
-    font-weight: bold;
-}
-
-/* Contenedores */
-#servicios-page .consulta-container,
-#servicios-page .farmacia-container,
-#servicios-page .tienda-container {
-    color: #00579E;
+    font-weight: bold; }
+  .main-servicios .consulta-container, .main-servicios .farmacia-container, .main-servicios .tienda-container {
+    color: rgba(7, 7, 141, 0.589);
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    padding: 0 20px; 
-    gap: 20px; 
-}
-
-#servicios-page .consulta-container img,
-#servicios-page .farmacia-container img,
-#servicios-page .tienda-container img {
-    max-width: 100%; 
-    height: auto; 
-}
-
-/* Media query para pantallas mas grandes */
-@media (min-width: 768px) {
-    #servicios-page .consulta-container,
-    #servicios-page .farmacia-container,
-    #servicios-page .tienda-container {
-        flex-direction: row; 
-        justify-content: center; 
-    }
-
-    #servicios-page .consulta-container img,
-    #servicios-page .farmacia-container img,
-    #servicios-page .tienda-container img {
-        width: 40%; 
-        margin: 0 20px; 
-    }
-}
-
-/* Footer serv */
-#servicios-page footer {
-    background-color: #e9e9e946;
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-}
-
-#servicios-page footer .contenido-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    color: #00579E;
-    font-weight: bold;
-    gap: 20px; 
-}
-
-#servicios-page footer img {
-    max-width: 500px;
-    height: auto;
-}
-
-#servicios-page footer .ubicacion_contacto {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#servicios-page footer iframe {
-    max-width: 200%;
-    height: 300px;
-    border: 0;
-}
-
-#servicios-page footer a img {
-    max-width: 40px;
-    height: auto;
-    margin: 0 50px;
-}
-
-/* Copyright */
-#servicios-page .copyright {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Media Queries para Desktop */
-@media (min-width: 992px) {
-    #servicios-page .imagenes_sn {
-        justify-content: space-between;
-        gap: 40px;
-    }
-
-    #servicios-page footer {
-        flex-direction: row; 
-        justify-content: space-around; 
-        padding: 20px 40px; 
-    }
-
-    #servicios-page footer .contenido-footer {
-        gap: 40px; 
-    }
-
-    #servicios-page footer .ubicacion_contacto {
-        width: 30%; 
-        margin: 0 20px; 
-    }
-}
-
-/* Media query para pantallas medianas  */
-@media (min-width: 768px) and (max-width: 991px) {
-    #servicios-page footer {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    #servicios-page footer .contenido-footer {
-        flex-direction: column; 
-        align-items: center;
-        gap: 20px; 
-    }
-
-    #servicios-page footer .ubicacion_contacto {
-        margin-top: 10px; /
-    }
-}
-
-/* Media query para pantallas pequeñas */
-@media (max-width: 767px) {
-    #servicios-page header,
-    #servicios-page nav ul,
-    #servicios-page footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #servicios-page .header {
-        flex-direction: column;
-    }
-
-    #servicios-page main {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    #servicios-page .consulta-container,
-    #servicios-page .farmacia-container,
-    #servicios-page .tienda-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #servicios-page footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-
-
-/* pagina especialistas */
-.especialistas{
-    
-    background-image: url("../assets/img/Equipo-Clinica-Veterinaria-Ejea-1.png");
-    color: #00579E;
-    font-weight: bold;
-    text-align:center;
-    width: 1472px;
-    height: 401px;
+    text-align: justify;
+    padding: 20px; }
+  .main-servicios .consulta-container img,
+  .main-servicios .farmacia-container img,
+  .main-servicios .tienda-container img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
     object-fit: cover;
-    
-}
+    border-radius: 8px;
+    margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .main-servicios .consulta-container, .main-servicios .farmacia-container, .main-servicios .tienda-container {
+      flex-direction: row;
+      align-items: center; }
+    .main-servicios .consulta-container img,
+    .main-servicios .farmacia-container img,
+    .main-servicios .tienda-container img {
+      width: 40%;
+      margin-right: 20px; } }
 
-.descrip_especialistas-container {
-    text-align: center;
-    color: #00579E;
-    font-weight: bold;
-}
+main {
+  margin: 2rem 0; }
+  main .quienes-somos img {
+    width: 100%;
+    object-fit: cover; }
+  main .nuestros-servicios {
+    background-color: #efeff0;
+    padding: 2rem;
+    text-align: center; }
 
-.descrip_especialistas-container ul {
-    display: inline-block; 
-    padding-left: 0; 
-    margin: 0; 
-    list-style: none; 
-}
-
-.descrip_especialistas-container ul li {
-    position: relative; 
-    padding-left: 20px; 
-    text-align: left; 
-}
-
-.descrip_especialistas-container ul li::before {
-    content: "•"; 
-    position: absolute; 
-    left: 0; 
-    color: #00579E; 
-    font-size: 1.2em;
-}
-
-
-.profesionales_container1 h1 {
-    text-align: center;
-    color: #00579E;
-
-}
-
-.profesionales_container1 {
+.especialistas {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa; }
+  .especialistas .especialistas-title {
+    position: relative;
+    background-image: url("../assets/img/Equipo-Clinica-Veterinaria-Ejea-1.png");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
     display: flex;
-}
+    align-items: center;
+    justify-content: center;
+    color: #182c85; }
+  .especialistas p {
+    font-size: 1.1rem;
+    color: #1f0875;
+    margin-top: 20px; }
+  .especialistas .especialidades-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    list-style: none; }
+    .especialistas .especialidades-list li {
+      flex: 1 1 200px;
+      font-size: 1rem;
+      color: #074D8D;
+      font-weight: bold;
+      text-align: center; }
 
-.profesionales_container2 {
-    display: flex;
-}
+.main-clientes .titulo_opiniones h1 {
+  color: #007bff;
+  margin-top: 2rem; }
 
-/* pagina clientes */
-.clientes-container1{
-    display: flex;
-    color: #00579E;
-}
-.titulo_opiniones {
+main {
+  padding: 2rem 0; }
+  main .tienda-container1 {
     text-align: center;
-    color: #00579E;
-}
-
-.tienda-container1 {
+    margin-bottom: 2rem;
     display: flex;
-    color: #00579E;
-    
-}
-
-.alimentos-container H2{
-    color: #00579E;
+    justify-content: center; }
+    main .tienda-container1 img {
+      width: 400%;
+      max-width: 300px;
+      height: 300px; }
+    main .tienda-container1 h1 {
+      margin-top: 1rem;
+      margin-left: 100px;
+      color: #00579E; }
+  main .alimentos-container,
+  main .accesorios-container {
     text-align: center;
-}
+    margin: 2rem 0; }
+    main .alimentos-container h2,
+    main .accesorios-container h2 {
+      margin-bottom: 1rem;
+      color: #00579E; }
 
-.container-productos{
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.profesionales {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  color: blue; }
+  .profesionales .profesionales-container {
     display: flex;
-}
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap; }
+    @media (max-width: 992px) {
+      .profesionales .profesionales-container {
+        gap: 20px; } }
+    @media (max-width: 768px) {
+      .profesionales .profesionales-container {
+        justify-content: center;
+        gap: 15px; } }
+  .profesionales .profesional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s; }
+    .profesionales .profesional:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+    .profesionales .profesional img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 10px; }
+    .profesionales .profesional figcaption {
+      font-size: 1.2rem;
+      color: #182c85;
+      margin: 5px 0; }
+  @media (max-width: 992px) {
+    .profesionales .profesional {
+      width: 200px;
+      padding: 10px; } }
+  @media (max-width: 768px) {
+    .profesionales .profesional {
+      width: 90%;
+      max-width: 300px;
+      margin-bottom: 15px; } }
 
-.accesorios-container h2{
-    color: #00579E;
-    text-align: center;
-}
+.opiniones-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 50px; }
+  .opiniones-container .cliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background-color: #ffffff;
+    padding: 15px;
+    transition: transform 0.3s; }
+    .opiniones-container .cliente p {
+      text-align: center;
+      color: darkblue; }
+    .opiniones-container .cliente:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 50px; }
+    .opiniones-container .cliente img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 10px; }
+    .opiniones-container .cliente figcaption {
+      font-size: 1.2rem;
+      color: #182c85;
+      margin: 5px 0; }
+
+.container-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0; }
+  .container-productos .card-container {
+    width: 100%;
+    margin: 0.5rem; }
+    @media (min-width: 576px) {
+      .container-productos .card-container {
+        width: calc(50% - 1rem); } }
+    @media (min-width: 768px) {
+      .container-productos .card-container {
+        width: calc(33.333% - 1rem); } }
+    .container-productos .card-container img {
+      width: 100%;
+      border-radius: 0.5rem; }

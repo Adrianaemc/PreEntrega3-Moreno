@@ -1,0 +1,18 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin responsive($property, $mobile, $tablet, $desktop) {
+    #{$property}: $mobile;
+  
+    @media (min-width: map-get($breakpoints, 'tablet')) {
+      #{$property}: $tablet;
+    }
+  
+    @media (min-width: map-get($breakpoints, 'desktop')) {
+      #{$property}: $desktop;
+    }
+  }
+  

@@ -1,0 +1,10 @@
+.main-clientes {
+    .titulo_opiniones {
+        h1 {
+            color: map-get($colors, "primary");
+            @extend %text-center-bold;
+            margin-top: 2rem;
+        }
+    }
+}
+

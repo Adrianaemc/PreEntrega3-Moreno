@@ -1,0 +1,14 @@
+footer {
+    background-color: rgba(233, 233, 233, 0.275);
+    color: black;
+    padding: 20px;
+    @include flex-center;
+    text-align: center;
+  
+    .contenido-footer {
+      @include flex-center;
+      color: $primary-color;
+      font-weight: bold;
+      gap: 20px;
+    }
+  }

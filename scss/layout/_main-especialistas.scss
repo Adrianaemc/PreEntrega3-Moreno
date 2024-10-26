@@ -1,0 +1,39 @@
+.especialistas {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+
+    .especialistas-title {
+        position: relative;
+        background-image: url("../assets/img/Equipo-Clinica-Veterinaria-Ejea-1.png");
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(24, 44, 133);
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: #1f0875;
+        margin-top: 20px;
+    }
+
+    .especialidades-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+
+        li {
+            flex: 1 1 200px;
+            font-size: 1rem;
+            color: #074D8D;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

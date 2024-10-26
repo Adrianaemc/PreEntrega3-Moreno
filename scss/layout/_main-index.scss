@@ -1,0 +1,16 @@
+main {
+  margin: 2rem 0;
+
+  .quienes-somos {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .nuestros-servicios {
+    background-color: $secondary-color;
+    padding: 2rem;
+    text-align: center;
+  }
+}

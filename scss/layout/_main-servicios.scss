@@ -1,0 +1,84 @@
+.main-servicios {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    /* Sección "Nuestros Servicios" */
+    .nuestros_servicios2 {
+        background-image: url("../assets/img/servicios.png");
+        background-size: cover;
+        background-position: center;
+        color: $primary-color;
+        font-weight: bold;
+        text-align: center;
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Imágenes de servicios */
+    .imagenes_sn {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        margin-top: 40px;
+
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+        }
+    }
+
+    /* Titulos de secciones */
+    .consulta-titulo, .farmacia-titulo, .tienda-titulo {
+        text-align: center;
+        color: $primary-color;
+        font-weight: bold;
+    }
+
+    /* Contenedores de secciones */
+    .consulta-container, .farmacia-container, .tienda-container {
+        color: rgba(7, 7, 141, 0.589);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .consulta-container img,
+    .farmacia-container img,
+    .tienda-container img {
+        width: 100%;
+        max-width: 400px; 
+        height: 250px; 
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos responsivos para pantallas grandes */
+    @media (min-width: 768px) {
+        .consulta-container,
+        .farmacia-container,
+        .tienda-container {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .consulta-container img,
+        .farmacia-container img,
+        .tienda-container img {
+            width: 40%;
+            margin-right: 20px; 
+        }
+    }
+}

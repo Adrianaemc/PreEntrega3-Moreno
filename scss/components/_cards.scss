@@ -1,0 +1,141 @@
+// cards profesionales (especialistas)
+.profesionales {
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    text-align: center;
+    color: blue;
+
+    .profesionales-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 50px;
+        flex-wrap: wrap; // Permite que las tarjetas se envuelvan
+
+        // Media Queries
+        @media (max-width: 992px) { // Tablets y dispositivos medianos
+            gap: 20px; // Reduce el espacio entre tarjetas
+        }
+
+        @media (max-width: 768px) { // Dispositivos móviles
+            justify-content: center; // Centra los elementos en pantallas más pequeñas
+            gap: 15px; // Reduce el espacio entre tarjetas
+        }
+    }
+
+    .profesional {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 250px; 
+        background-color: #ffffff; 
+        border: 1px solid #ddd; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        padding: 15px; 
+        transition: transform 0.3s; 
+
+        &:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        img {
+            width: 100%; 
+            border-radius: 50%; 
+            margin-bottom: 10px; 
+        }
+
+        figcaption {
+            font-size: 1.2rem; 
+            color: rgb(24, 44, 133); 
+            margin: 5px 0; 
+        }
+    }
+
+    // Media Queries para hacer las cards responsive
+    @media (max-width: 992px) { // Tablets y dispositivos medianos
+        .profesional {
+            width: 200px; 
+            padding: 10px; 
+        }
+    }
+
+    @media (max-width: 768px) { // Dispositivos móviles
+        .profesional {
+            width: 90%; // Ajusta el ancho en pantallas más pequeñas
+            max-width: 300px; // Limita el ancho máximo
+            margin-bottom: 15px; // Añade un margen inferior
+        }
+    }
+}
+
+// cards opiniones
+.opiniones-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+
+    .cliente {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 250px; 
+        background-color: #ffffff; 
+        padding: 15px; 
+        transition: transform 0.3s; 
+        p {
+            text-align: center;
+            color: darkblue;
+        }
+
+    &:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px; 
+    }
+
+    img {
+        width: 100%; 
+        border-radius: 50%; 
+        margin-bottom: 10px; 
+    }
+
+    figcaption {
+        font-size: 1.2rem; 
+        color: rgb(24, 44, 133); 
+        margin: 5px 0; 
+        @extend %text-center-bold;
+    }
+    }
+}
+
+
+//CARDS TIENDA, PETSHP
+.container-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 2rem 0;
+.card-container {
+    @extend %card-base;
+    width: 100%; 
+    margin: 0.5rem; 
+    
+    // pantallas grandes
+    @media (min-width: 576px) {
+      width: calc(50% - 1rem); // Ocupa el 50%
+    }
+    
+    @media (min-width: 768px) {
+      width: calc(33.333% - 1rem); // Ocupa el 33.33%
+    }
+    
+    img {
+        width: 100%; 
+        border-radius: 0.5rem; 
+        }
+    }   
+}

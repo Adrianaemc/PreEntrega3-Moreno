@@ -3,127 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mascotas</title>
+    <title>Especialistas - Mascotas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/img/android-chrome-192x192.png" type="image/png">
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body>
-    <header>
-        <header>
-            <div class="header">
-                <div>
-                    <img src="../assets/img/logo-header.png (header).png" alt="logo">
+    <header class="container-fluid bg-header py-3">
+        <div class="row align-items-center">
+            <div class="col-4 col-md-2">
+                <img src="../assets/img/logo-header.png" alt="logo" class="img-fluid" style="max-width: 85px;">
+            </div>
+            <div class="col-8 col-md-10">
+                <nav class="text-center">
+                    <ul class="nav justify-content-center fw-bold">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="./servicios.html" class="nav-link">Servicios</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Especialistas</a></li>
+                        <li class="nav-item"><a href="./clientes.html" class="nav-link">Clientes</a></li>
+                        <li class="nav-item"><a href="./tienda.html" class="nav-link">Tienda</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="especialistas text-center">
+            <div class="especialistas-title">
+                <h1><strong>NUESTROS ESPECIALISTAS</strong></h1>
+            </div>
+            <p>Cada animal es un mundo, por eso contamos con especialistas de todo tipo para que puedas darle todas las atenciones a tu mascota en el mismo lugar. Algunas de nuestras especialidades:</p>
+            <ul class="especialidades-list">
+                <li>Gastroenterología</li>
+                <li>Traumatología</li>
+                <li>Odontología</li>
+                <li>Nefrología</li>
+                <li>Oftalmología</li>
+                <li>Cardiología</li>
+                <li>Cirugías Traumatológicas</li>
+                <li>Hematología</li>
+                <li>Endocrinología</li>
+                <li>Oncología</li>
+                <li>Dermatología</li>
+                <li>Cirugías de urgencia y programadas</li>
+            </ul>
+        </section>
+        <section class="profesionales">
+            <h3>Nuestros Profesionales</h3>
+            <div class="profesionales-container justify-content-center align-items-center">
+                <div class="profesional">
+                    <figure>
+                        <img src="../assets/img/profesional1.jpg" alt="Médico 1">
+                        <figcaption>DR. Leonardo Lim, Jefe Veterinario</figcaption>
+                    </figure>
                 </div>
-                <div class="nav">
-                    <nav>
-                        <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="#">Especialistas</a></li>
-                        <li><a href="clientes.html">Clientes</a></li>
-                        <li><a href="tienda.html">Tienda</a></li>
-                        </ul>
-                    </nav>
+                <div class="profesional">
+                    <figure>
+                        <img src="../assets/img/profesional2.jpg" alt="Médico 2">
+                        <figcaption>DR. Jean Mariño, Cirujano Veterinario</figcaption>
+                    </figure>
+                </div>
+                <div class="profesional">
+                    <figure>
+                        <img src="../assets/img/profesional3.png" alt="Médico 3">
+                        <figcaption>DR. Jennifer Perez, Ecografista</figcaption>
+                    </figure>
+                </div>
+                <div class="profesional">
+                    <figure>
+                        <img src="../assets/img/profesional4.png" alt="Médico 4">
+                        <figcaption>DR. Mariana Perez, Vererinario</figcaption>
+                    </figure>
+                </div>
+                <div class="profesional">
+                    <figure>
+                        <img src="../assets/img/profesional5.png" alt="Médico 5">
+                        <figcaption>DR. Miguel Mendoza, Cirujano</figcaption>
+                    </figure>
                 </div>
             </div>
-        </header>
-    </header>
-    <main>
-        <section class="especialistas">
-            <h2><strong>NUESTROS  ESPECIALISTAS</strong></h2>
-            </section>
-        
-            <section class="descrip_especialistas-container">
-                <p>Cada animal es un mundo, por eso contamos con 
-                    especialistas de todo tipo para que puedas darle todas las
-                    atenciones a tu mascotas en el mismo lugar. <br>
-                    Algunas de nuestras especialidades: <br>
-                </p>
-                <ul>
-                    <li>Gastroenterología</li>
-                    <li>Traumatología</li>
-                    <li>Odontología</li>
-                    <li>Nefrología</li>
-                    <li>Oftalmología</li>
-                    <li>Cardiología</li>
-                    <li>Cirugías Traumatológicas</li>
-                    <li>Hematología</li>
-                    <li>Endocrinología</li>
-                    <li>Oncología</li>
-                    <li>Dermatología</li>
-                    <li>Cirugías de urgencia y programadas</li>
-                    
-                </ul>
         </section>
-        <section >
-            <h1>Nuestros profesionales</h1>
-            <div class="profesionales_container1">
-                <div>
-                    <figure>                    
-                        <img src="" alt="medico">
-                        <figcaption>Medico</figcaption>
-                    <figure>
-                </div>
-                <div>
-                    <figure>                    
-                        <img src="" alt="medico">
-                        <figcaption>Medico</figcaption>
-                    <figure>
-                </div>
-                <div>
-                    <figure>                    
-                        <img src="" alt="medico">
-                        <figcaption>Medico</figcaption>
-                    <figure>
-                </div>
-            </section>
-            <section class="profesionales_container2">
-
-                <div>
-                    <figure>                    
-                        <img src="" alt="Medico">
-                        <figcaption>Medico</figcaption>
-                    <figure>
-                </div>
-                <div>
-                    <figure>                    
-                        <img src="" alt="Medico">
-                        <figcaption>Medico</figcaption>
-                    <figure>
-                </div>
-                <div>
-                    <figure>                    
-                        <img src="" alt="Medico">
-                        <figcaption>Medico</figcaption>
-                    <figure>
-                </div>
-            </section>
     </main>
 
-    <footer >
-        <div class="contenido-footer">
-            <div>
-                <img src="../assets/img/logo-footer.png" alt="logo">
+    <footer class="container-fluid bg-light py-4">
+        <div class="container">
+            <div class="row text-primary-emphasis">
+                <div class="col-md-4">
+                    <img src="../assets/img/logo-footer.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <h1>Nuestra ubicación</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7811.078736597059!2d-58.42462608359861!3d-34.60026576381144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6657c2d61b%3A0x17c371d00aa9cced!2sWellVet!5e0!3m2!1ses!2sar!4v1726354109289!5m2!1ses!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <h2>Contáctanos</h2>
+                    <a href="https://web.whatsapp.com/">
+                        <img src="../assets/img/logo-wa.png" alt="whatsapp" class="img-fluid" style="max-width: 65px;">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="../assets/img/logo-ig.jpg" alt="instagram" class="img-fluid" style="max-width: 65px;">
+                    </a>
+                </div>
             </div>
-            <div class="ubicacion_contacto">
-                <h1> Nuestra ubicación</h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7811.078736597059!2d-58.42462608359861!3d-34.60026576381144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6657c2d61b%3A0x17c371d00aa9cced!2sWellVet!5e0!3m2!1ses!2sar!4v1726354109289!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Mascotas. Todos los derechos reservados.</p>
             </div>
-            <div>
-                <h2>Contátanos</h2>
-                <a href="https://web.whatsapp.com/">
-                    <img src="../assets/img/logo-wa.png" alt="whatsapp">
-                </a>
-                <a href="https://www.instagram.com/">
-                    <img src="../assets/img/logo-ig.jpg" alt="instagram">
-                </a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2024 Mascotas. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
 </body>
 </html>
